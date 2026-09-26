@@ -1,0 +1,36 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+.kotlin/
+
+# Android / IDE
+local.properties
+*.iml
+.idea/
+.cxx/
+captures/
+.externalNativeBuild/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+release/
+
+# Signing — لا تُرفع أبداً
+*.jks
+*.keystore
+keystore.properties
+*.pem
+*.p12
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

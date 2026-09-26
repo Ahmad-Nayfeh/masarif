@@ -1,0 +1,47 @@
+{
+  "entries": [
+    { "aliases": ["panda", "hyperpanda", "hyper panda", "بنده", "بندة", "هايبر بنده"], "canonical": "بنده", "category": "supermarket", "match": "contains", "priority": 10 },
+    { "aliases": ["othaim", "alothaim", "al othaim", "العثيم"], "canonical": "العثيم", "category": "supermarket", "match": "contains", "priority": 10 },
+    { "aliases": ["tamimi", "altamimi", "al tamimi", "التميمي"], "canonical": "التميمي", "category": "supermarket", "match": "contains", "priority": 10 },
+    { "aliases": ["danube", "الدانوب"], "canonical": "الدانوب", "category": "supermarket", "match": "contains", "priority": 10 },
+    { "aliases": ["lulu", "لولو"], "canonical": "لولو", "category": "supermarket", "match": "contains", "priority": 10 },
+    { "aliases": ["carrefour", "كارفور"], "canonical": "كارفور", "category": "supermarket", "match": "contains", "priority": 10 },
+    { "aliases": ["nesto", "نستو"], "canonical": "نستو", "category": "supermarket", "match": "contains", "priority": 10 },
+
+    { "aliases": ["aldrees", "al drees", "drees", "الدريس"], "canonical": "الدريس", "category": "fuel_transport", "match": "contains", "priority": 10 },
+    { "aliases": ["sasco", "ساسكو"], "canonical": "ساسكو", "category": "fuel_transport", "match": "contains", "priority": 10 },
+    { "aliases": ["naft", "نفط"], "canonical": "نفط", "category": "fuel_transport", "match": "contains", "priority": 10 },
+    { "aliases": ["petromin", "بترومين"], "canonical": "بترومين", "category": "fuel_transport", "match": "contains", "priority": 10 },
+    { "aliases": ["petroly", "بترولي"], "canonical": "بترولي", "category": "fuel_transport", "match": "contains", "priority": 10 },
+    { "aliases": ["uber", "أوبر", "اوبر"], "canonical": "أوبر", "category": "fuel_transport", "match": "contains", "priority": 10 },
+    { "aliases": ["careem", "كريم"], "canonical": "كريم", "category": "fuel_transport", "match": "contains", "priority": 10 },
+
+    { "aliases": ["hungerstation", "hunger station", "هنقرستيشن", "هنقر ستيشن"], "canonical": "هنقرستيشن", "category": "restaurants", "match": "contains", "priority": 10 },
+    { "aliases": ["jahez", "جاهز"], "canonical": "جاهز", "category": "restaurants", "match": "contains", "priority": 10 },
+    { "aliases": ["mrsool", "mrsol", "مرسول"], "canonical": "مرسول", "category": "restaurants", "match": "contains", "priority": 10 },
+
+    { "aliases": ["jawwy", "stc", "جوي", "اس تي سي", "إس تي سي"], "canonical": "STC/Jawwy", "category": "subscriptions", "match": "contains", "priority": 10 },
+    { "aliases": ["mobily", "موبايلي"], "canonical": "Mobily", "category": "subscriptions", "match": "contains", "priority": 10 },
+    { "aliases": ["zain", "زين"], "canonical": "Zain", "category": "subscriptions", "match": "contains", "priority": 10 },
+    { "aliases": ["netflix", "نتفلكس"], "canonical": "Netflix", "category": "subscriptions", "match": "contains", "priority": 10 },
+    { "aliases": ["spotify", "سبوتيفاي"], "canonical": "Spotify", "category": "subscriptions", "match": "contains", "priority": 10 },
+    { "aliases": ["shahid", "شاهد"], "canonical": "Shahid", "category": "subscriptions", "match": "contains", "priority": 10 },
+    { "aliases": ["apple.com", "apple com", "itunes"], "canonical": "Apple", "category": "subscriptions", "match": "contains", "priority": 10 },
+    { "aliases": ["google play", "google *", "youtube premium"], "canonical": "Google", "category": "subscriptions", "match": "contains", "priority": 10 },
+
+    { "aliases": ["golden scent", "goldenscent", "قولدن سنت"], "canonical": "Golden Scent", "category": "beauty", "match": "contains", "priority": 10 },
+    { "aliases": ["sephora", "سيفورا"], "canonical": "Sephora", "category": "beauty", "match": "contains", "priority": 10 },
+    { "aliases": ["nice one", "niceone", "نايس ون"], "canonical": "Nice One", "category": "beauty", "match": "contains", "priority": 10 },
+
+    { "aliases": ["shein", "شي ان", "شي إن"], "canonical": "Shein", "category": "clothes", "match": "contains", "priority": 10 },
+    { "aliases": ["namshi", "نمشي"], "canonical": "Namshi", "category": "clothes", "match": "contains", "priority": 10 },
+    { "aliases": ["zara", "زارا"], "canonical": "Zara", "category": "clothes", "match": "contains", "priority": 10 },
+
+    { "aliases": ["supermarket", "hypermarket", "hyper market", "grocery", "groce", "groceries", "foodstuff", "food stuff", "tamwinat", "baqala", "سوبرماركت", "سوبر ماركت", "هايبر", "بقالة", "تموينات", "تموين"], "category": "supermarket", "match": "contains", "priority": 1 },
+    { "aliases": ["restaurant", "restaurants", "resturant", "fast food", "burger", "pizza", "shawarma", "kitchen", "مطعم", "مطاعم", "شاورما", "برجر", "بيتزا"], "category": "restaurants", "match": "contains", "priority": 1 },
+    { "aliases": ["cafe", "caffe", "coffee", "juices", "juice", "bakery", "كافيه", "كوفي", "قهوة", "عصائر", "مخبز"], "category": "cafes", "match": "contains", "priority": 1 },
+    { "aliases": ["station", "fuel", "petrol", "gas station", "محطة", "بنزين", "وقود"], "category": "fuel_transport", "match": "contains", "priority": 1 },
+    { "aliases": ["perfume", "perfumes", "cosmetics", "beauty", "عطور", "عطر", "تجميل"], "category": "beauty", "match": "contains", "priority": 1 },
+    { "aliases": ["fashion", "apparel", "shoes", "ملابس", "أحذية", "احذية", "أزياء", "ازياء"], "category": "clothes", "match": "contains", "priority": 1 }
+  ]
+}
