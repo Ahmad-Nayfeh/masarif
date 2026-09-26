@@ -151,23 +151,18 @@ jobs:
         id: v
         run: echo "version=$(grep -oP 'versionName = "\K[^"]+' app/build.gradle.kts)" >> "$GITHUB_OUTPUT"
 
-      - name: Skip if this version is already released
-        id: tag
-        run: |
-          if git ls-remote --exit-code --tags origin "refs/tags/v${{ steps.v.outputs.version }}" >/dev/null 2>&1; then
-            echo "exists=true" >> "$GITHUB_OUTPUT"; echo "v${{ steps.v.outputs.version }} already released"
-          else
-            echo "exists=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - uses: actions/download-artifact@v4
-        if: steps.tag.outputs.exists == 'false'
         with:
           name: masarif-apk
           path: out
 
-      - name: Create GitHub Release with the APK
-        if: steps.tag.outputs.exists == 'false'
+      # الوسم يشير دائماً إلى آخر commit على main لنفس النسخة، فيُحدَّث الإصدار الموجود بدل إنشاء إصدار جديد
+      - name: Point the version tag at this commit
+        run: |
+          git tag -f "v${{ steps.v.outputs.version }}" "$GITHUB_SHA"
+          git push --force origin "refs/tags/v${{ steps.v.outputs.version }}"
+
+      - name: Create or update the GitHub Release with the APK
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.v.outputs.version }}
